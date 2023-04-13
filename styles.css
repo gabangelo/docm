@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 900vh;
+}
+
+section {
+  height: 90vh;
+  padding-left: 100px;
+  scroll-behavior: smooth;
+}
+ol {
+  height: 100%;
+}
+
+ol li.item-menu {
+  transition: 0.5s;
+}
+
+ol li.ativo {
+  border-radius: 3px;
+  background-color: #ffa;
+}
+
+nav.menu-lateral {
+  z-index: 99;
+  width: 80px;
+  height: 100%;
+  background-color: #ccc;
+  padding: 20px 0 20px 2%;
+  box-shadow: 1px 0 0 #00f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+nav.menu-lateral.expandir {
+  width: 300px;
+}
+
+.btn-expandir {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.btn-expandir > i {
+  color: #000;
+  font-size: 24px;
+  cursor: pointer;
+}
